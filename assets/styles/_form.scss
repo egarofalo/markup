@@ -1,0 +1,29 @@
+form {
+    // Site search form
+    &.search-form {
+        max-width: 25rem;
+
+        [type="submit"].button {
+            &:after {
+                @include fa;
+                @include fas;
+                content: "\f002";
+            }
+
+            &.loading {
+                &:after {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    // Comment form
+    &.comment-form {
+        .comment-form-comment {
+            textarea#comment {
+                max-width: 600px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.site-paginator {
+	margin: 2rem 0;
+
+	.site-paginator__content {
+		display: flex;
+		justify-content: center;
+
+		.page-numbers {
+			margin: 0 0.25rem;
+		}
+	}
+}

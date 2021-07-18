@@ -1,0 +1,24 @@
+/*
+RESPONSIVE FONTS IN REM UNITS
+*/
+html {
+	font-size: 16px;
+}
+
+@include media-breakpoint-up(sm) {
+	html {
+		font-size: 17px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	html {
+		font-size: 19px;
+	}
+}

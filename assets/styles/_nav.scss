@@ -1,0 +1,105 @@
+nav {
+    &.navbar {
+        .site-header & {
+            background-color: $white;
+
+            .navbar-toggler {
+                border: none;
+                padding: 0.25rem;
+
+                &:before,
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    background-color: $gray-800;
+                    height: 4px;
+                    position: relative;
+                    transition: background-color 0.5s ease-in-out,
+                        top 0.5s ease-in-out, transform 0.5s ease-in-out 0.5s;
+                }
+
+                &:before {
+                    top: -4px;
+                }
+
+                &:after {
+                    top: 4px;
+                }
+
+                .navbar-toggler-icon {
+                    display: block;
+                    background: none;
+                    background-color: $gray-800;
+                    height: 4px;
+                    width: 28px;
+                    transition: background-color 0.5s ease-in-out,
+                        opacity 0s ease-in-out 0.5s;
+                }
+
+                &:hover {
+                    &:before,
+                    &:after,
+                    .navbar-toggler-icon {
+                        background-color: $blue;
+                    }
+                }
+
+                &.collapsed {
+                    &:before,
+                    &:after {
+                        transition: background-color 0.5s ease-in-out,
+                            top 0.5s ease-in-out 0.5s,
+                            transform 0.5s ease-in-out 0s;
+                    }
+                }
+
+                &[aria-expanded="true"] {
+                    .navbar-toggler-icon {
+                        opacity: 0;
+                    }
+
+                    &:before {
+                        top: 4px;
+                        transform: rotate(45deg);
+                    }
+
+                    &:after {
+                        top: -4px;
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .navbar-collapse {
+                transition: height 0.4s ease-in-out;
+            }
+
+            .navbar-nav {
+                & > .nav-item {
+                    & > .nav-link {
+                        font-weight: 600;
+                        font-size: 0.85rem;
+                        color: $black;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+
+                    &.active {
+                        & > .nav-link {
+                            color: $indigo;
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}

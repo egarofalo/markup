@@ -1,0 +1,38 @@
+{
+    "outputPath": "dist/",
+    "publicPath": "/dist",
+    "browserSync": {
+        "host": "localhost",
+        "port": 3000,
+        "proxy": "https://example.test",
+        "files": ["**/*.(php|twig)", "**/*.(js|css)"]
+    },
+    "entries": [
+        {
+            "output": "scripts/main",
+            "input": "./assets/scripts/main.js"
+        },
+        {
+            "output": "scripts/forms",
+            "input": "./assets/scripts/forms.js"
+        }
+    ],
+    "sharedEntry": {
+        "output": "scripts/shared",
+        "input": "./assets/scripts/shared.js"
+    },
+    "styleEntries": [
+        {
+            "output": "styles/main",
+            "input": "./assets/styles/main.scss"
+        },
+        {
+            "output": "styles/editor-styles",
+            "input": "./assets/styles/editor-styles.scss"
+        },
+        {
+            "output": "styles/login",
+            "input": "./assets/styles/login.scss"
+        }
+    ]
+}

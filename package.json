@@ -1,0 +1,29 @@
+{
+    "engines": {
+        "node": "12.x"
+    },
+    "scripts": {
+        "dev": "./node_modules/.bin/encore dev",
+        "watch": "./node_modules/.bin/encore dev --watch",
+        "browsersync": "./node_modules/.bin/encore dev --watch --browsersync",
+        "production": "./node_modules/.bin/encore production"
+    },
+    "devDependencies": {
+        "@symfony/webpack-encore": "^0.30.2",
+        "autoprefixer": "^9.7.5",
+        "bootstrap": "^4.4.6",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "imagemin-webpack-plugin": "^2.4.2",
+        "jquery": "^3.4.1",
+        "node-sass": "^4.13.1",
+        "popper.js": "^1.16.1",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.2",
+        "webpack-notifier": "^1.8.0"
+    },
+    "browserslist": [
+        "> 0.5%",
+        "last 2 versions"
+    ]
+}

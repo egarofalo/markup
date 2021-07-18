@@ -1,0 +1,9 @@
+.grid-post {
+	margin-top: -$grid-gutter-width / 2;
+	margin-bottom: -$grid-gutter-width / 2;
+
+	& > .item-post {
+		padding-top: $grid-gutter-width / 2;
+		padding-bottom: $grid-gutter-width / 2;
+	}
+}

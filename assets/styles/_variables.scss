@@ -1,0 +1,109 @@
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+    xxs: 0,
+    xs: 420px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1300px,
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+    xs: 420px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1300px,
+);
+
+// Global colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+// Custom colors
+$primary-color: $blue;
+$secondary-color: $indigo;
+$tertiary-color: $orange;
+
+// Bootstrap 4 overrides variables
+// Body tag
+$body-bg: #fff;
+$body-color: #2e2e2e;
+// Global styling
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+// Paragraphs
+$paragraph-margin-bottom: 1rem;
+// Set the width of the gutters
+$grid-gutter-width: 30px;
+// Container padding
+$container-padding-x: $grid-gutter-width / 2;
+// Enable shadows
+$enable-shadows: true;
+// Enable gradients
+$enable-gradients: true;
+// Font family
+$font-family-base: "Titillium Web", sans-serif;
+$font-size-base: 0.8rem;
+$font-weight-base: 400;
+$headings-font-family: "Titillium Web", sans-serif;
+// Style anchor elements
+$link-decoration: none;
+$link-color: $primary-color;
+$link-hover-decoration: none;
+$link-font-weight: 400;
+// Forms
+$input-btn-font-family: "Titillium Web", sans-serif;
+$input-btn-font-size: 0.8rem;
+$btn-font-family: "Titillium Web", sans-serif;
+$btn-font-size: 0.8rem;
+$btn-font-weight: 400;
+$input-font-family: "Titillium Web", sans-serif;
+$input-font-size: 0.8rem;
+$input-font-weight: 400;
+$input-border-color: #000;
+$input-focus-box-shadow: 0 0 3px 2px #000;
+$input-focus-border-color: $input-border-color;
+$form-feedback-font-size: 0.8rem;
+// Navbar
+$navbar-light-color: $black;
+$navbar-light-hover-color: $primary-color;
+$navbar-light-active-color: $primary-color;
+// Dropdown
+$dropdown-min-width: 8rem;
+$dropdown-font-size: 0.8rem;
+$dropdown-link-color: $black;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $secondary-color;
+$dropdown-link-active-color: $white;
+$dropdown-link-active-bg: $secondary-color;
+
+// web vars
+$post-loop-max-width: 480px;

@@ -1,0 +1,29 @@
+button.button,
+a.button,
+input[type="submit"].button,
+button[type="submit"].button {
+    @extend .btn;
+    @extend .btn-outline-dark;
+}
+
+input[type="submit"] {
+    &.loading {
+        @extend .disabled;
+    }
+}
+
+button[type="submit"] {
+    &.loading {
+        display: inline-flex;
+        align-items: center;
+        @extend .disabled;
+
+        &:after {
+            @include fa;
+            @include fas;
+            @extend %fa-spin;
+            content: "\f2f1" !important;
+            margin-left: 0.5rem;
+        }
+    }
+}

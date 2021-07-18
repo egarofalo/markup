@@ -1,0 +1,13 @@
+@mixin modal-type($type) {
+    .modal-dialog {
+        .modal-content {
+            border-color: map-get($map: $theme-colors, $key: $type);
+
+            .modal-header {
+                .modal-title {
+                    color: map-get($map: $theme-colors, $key: $type);
+                }
+            }
+        }
+    }
+}

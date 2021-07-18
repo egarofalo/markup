@@ -1,0 +1,25 @@
+{
+    "name": "codevelopers/markup",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "description": "Wordpress Starter Theme integrated with Bootstrap 4 Framework and Webpack Encore",
+    "homepage": "https://github.com/egarofalo/markup",
+    "authors": [
+        {
+            "name": "Lic. Edgardo Garofalo",
+            "email": "egarofalo83@gmail.com",
+            "homepage": "https://github.com/egarofalo",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "starter theme",
+        "wordpress starter theme",
+        "bootstrap"
+    ],
+    "require": {
+        "php": "^7.0",
+        "composer/installers": "^1.0"
+    }
+}

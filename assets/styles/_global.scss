@@ -1,0 +1,98 @@
+// Custom logo
+.custom-logo {
+    @extend .img-fluid;
+    width: 6rem;
+}
+
+// Contact information links
+.contact-info-links {
+    padding: 0 !important;
+    list-style: none;
+    margin-bottom: 0 !important;
+
+    li {
+        margin-bottom: 0.25rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+
+            &:before {
+                @include fa;
+                font-size: 2.5rem;
+                width: 3rem;
+                color: $gray-800;
+                text-align: center;
+                margin-right: 0.5rem;
+            }
+        }
+
+        &.item-email {
+            a {
+                &:before {
+                    @include fas;
+                    content: "\f199";
+                }
+            }
+        }
+
+        &.item-phone {
+            a {
+                &:before {
+                    @include fas;
+                    content: "\f098";
+                }
+            }
+        }
+
+        &.item-whatsapp {
+            a {
+                &:before {
+                    @include fab;
+                    content: "\f40c";
+                }
+            }
+        }
+
+        &.item-facebook {
+            a {
+                &:before {
+                    @include fab;
+                    content: "\f082";
+                }
+            }
+        }
+
+        &.item-instagram {
+            a {
+                &:before {
+                    @include fab;
+                    content: "\e055";
+                }
+            }
+        }
+
+        &.item-linkedin {
+            a {
+                &:before {
+                    @include fab;
+                    content: "\f08c";
+                }
+            }
+        }
+
+        &.item-twitter {
+            a {
+                &:before {
+                    @include fab;
+                    content: "\f081";
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.modal {
+    &.success {
+        @include modal-type("success");
+    }
+
+    &.danger {
+        @include modal-type("danger");
+    }
+
+    &.warning {
+        @include modal-type("warning");
+    }
+
+    &.info {
+        @include modal-type("info");
+    }
+
+    &.primary {
+        @include modal-type("primary");
+    }
+}
