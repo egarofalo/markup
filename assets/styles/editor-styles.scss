@@ -1,4 +1,21 @@
-.editor-styles-wrapper,
+@import "variables";
+
+// Bootstrap 4 functions, mixins and vars
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+
+// App mixins
+@import "mixins/all";
+
+.editor-styles-wrapper {
+    @include block-editor-styles();
+    @include editor-and-frontend-styles();
+    @include editor-styles-only();
+}
+
 body#tinymce {
-    // Put your editor styles here...
+    @include tinymce-styles();
+    @include editor-and-frontend-styles();
+    @include editor-styles-only();
 }

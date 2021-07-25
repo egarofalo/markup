@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Template Full Width
+ * Template Name: Full Width
  */
 
 get_header() ?>

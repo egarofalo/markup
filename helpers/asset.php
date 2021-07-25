@@ -15,14 +15,24 @@ function asset($filename)
 }
 
 /**
+ * Enqueue your Google Fonts styles.
+ */
+function google_fonts()
+{
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+}
+
+/**
  * Enqueues your styles.
  */
 function styles()
 {
+    // Add Google Fonts styles
+    google_fonts();
     // Add Fontawesome styles
     wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
     // Add site styles
-    wp_enqueue_style('main', asset('styles/main.css'));
+    wp_enqueue_style('main', asset('styles/main.css'), ['fontawesome', 'google-fonts']);
 }
 
 /**

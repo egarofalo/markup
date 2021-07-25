@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Markup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-16 23:50+0000\n"
+"POT-Creation-Date: 2021-07-25 14:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -34,6 +34,10 @@ msgstr ""
 
 #: comments.php:51
 msgid "Comments are closed."
+msgstr ""
+
+#. Name of the template
+msgid "Full Width"
 msgstr ""
 
 #: 404.php:24
@@ -102,10 +106,6 @@ msgstr ""
 
 #: 404.php:14
 msgid "Sorry, we couldn't find what you're looking for."
-msgstr ""
-
-#. Name of the template
-msgid "Template Full Width"
 msgstr ""
 
 #: comments.php:66

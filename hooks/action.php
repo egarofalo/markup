@@ -2,6 +2,7 @@
 
 use function Codevelopers\Markup\Helpers\Asset\admin_login_styles;
 use function Codevelopers\Markup\Helpers\Asset\asset;
+use function Codevelopers\Markup\Helpers\Asset\google_fonts;
 use function Codevelopers\Markup\Helpers\Asset\scripts;
 use function Codevelopers\Markup\Helpers\Asset\shared_script;
 use function Codevelopers\Markup\Helpers\Asset\styles;
@@ -33,6 +34,9 @@ add_action('after_setup_theme', function () {
  * Add Block Editor styles.
  */
 add_action('enqueue_block_editor_assets', function () {
+    // Add Google Fonts styles.
+    google_fonts();
+    // Editor styles.
     wp_enqueue_style(
         'block-editor-styles',
         asset('styles/editor-styles.css')
