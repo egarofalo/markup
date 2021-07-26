@@ -1,6 +1,8 @@
-.loop-post {
-	position: relative;
-	max-width: $post-loop-max-width;
-	height: 100%;
-	margin: 0 auto;
+.loop {
+	&.post-loop {
+		position: relative;
+		max-width: $post-loop-max-width;
+		height: 100%;
+		margin: 0 auto;
+	}
 }

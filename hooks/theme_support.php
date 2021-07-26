@@ -1,48 +1,6 @@
 <?php
 
 /**
- * Enable features from Soil when plugin is installed and activated.
- * https://roots.io/plugins/soil
- */
-add_action('after_setup_theme', function () {
-    add_theme_support('soil', [
-        // Cleaner WordPress markup
-        'clean-up' => [
-            // Obscure and suppress WordPress information.
-            'wp_obscurity',
-            // Disable WordPress emojis.
-            'disable_emojis',
-            // Disable Gutenberg block library CSS.
-            'disable_gutenberg_block_css' => false,
-            // Disable extra RSS feeds.
-            'disable_extra_rss',
-            // Disable recent comments CSS.
-            'disable_recent_comments_css',
-            // Disable gallery CSS.
-            'disable_gallery_css',
-            // Clean HTML5 markup.
-            'clean_html5_markup',
-        ],
-        // Disable REST API
-        // 'disable-rest-api',
-        // Disable asset versioning
-        'disable-asset-versioning',
-        // Disable trackbacks
-        'disable-trackbacks',
-        // Google Analytics
-        // 'google-analytics' => 'UA-XXXXX-Y',
-        // Move all JS to the footer
-        'js-to-footer',
-        // Cleaner walker for navigation menus
-        'nav-walker',
-        // Convert search results from /?s=query to /search/query/
-        'nice-search',
-        // Root relative URLs
-        'relative-urls'
-    ]);
-});
-
-/**
  * Enable plugins to manage the document title.
  * http://codex.wordpress.org/Function_Reference/add_theme_support#Title_Tag
  */
