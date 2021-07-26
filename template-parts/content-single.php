@@ -5,9 +5,11 @@
         </figure>
     <?php endif; ?>
 
-    <div class="entry-excerpt">
-        <?php the_excerpt() ?>
-    </div>
+    <?php if (has_excerpt()) : ?>
+        <div class="entry-excerpt">
+            <?php the_excerpt() ?>
+        </div>
+    <?php endif; ?>
 
     <div class="entry-content">
         <?php the_content() ?>

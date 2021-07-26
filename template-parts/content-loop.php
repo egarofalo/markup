@@ -21,9 +21,11 @@ use function Codevelopers\Markup\Helpers\Loop\posted_on;
         </figure>
     <?php endif; ?>
 
-    <div class="entry-excerpt">
-        <?php the_excerpt() ?>
-    </div>
+    <?php if (has_excerpt()) : ?>
+        <div class="entry-excerpt">
+            <?php the_excerpt() ?>
+        </div>
+    <?php endif; ?>
 
     <a href="<?php the_permalink() ?>" class="btn btn-secondary">
         <?php _e('Read more', 'markup') ?>
