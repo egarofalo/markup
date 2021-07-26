@@ -7,7 +7,7 @@
             <div class="site-footer__logo">
                 <?php
                 if (has_custom_logo()) :
-                    get_custom_logo();
+                    the_custom_logo();
                 else :
                 ?>
                     <p class="font-weight-bold text-center"><?php bloginfo('name') ?></p>
