@@ -1,6 +1,21 @@
-## [1.0.3] - 2021-07-26
+## [1.0.4] - 2021-07-27
+
+### Added
+
+-   Add new filter `markup_site_title`
+-   Add new section **Theme structure** in `README.md`
 
 ### Changed
+
+-   New arguments (`bool $echo = true` and `string $tag = 'h1'`) in `site_title` template tag function
+
+### Fixed
+
+-   Fix `block-editor-styles` mixin in `mixins/_editor.scss`
+
+## [1.0.3] - 2021-07-26
+
+### Fixed
 
 -   Fix version in `style.css` theme stylesheet
 

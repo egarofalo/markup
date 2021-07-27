@@ -7,22 +7,30 @@ use function CoDevelopers\Markup\Helpers\ConditionalTags\has_dynamic_sidebar;
 /**
  * Display the title.
  */
-function site_title()
+function site_title(bool $echo = true, string $tag = 'h1')
 {
+    $title = "";
+
     if (is_home() && is_front_page()) :
-        bloginfo('name');
+        $title = get_bloginfo('name');
     elseif (is_singular() || (is_home() && !is_front_page())) :
-        single_post_title();
+        $title = single_post_title('', false);
     elseif (is_archive()) :
-        the_archive_title();
+        $title = get_the_archive_title();
     elseif (is_search()) :
-        echo wp_sprintf(
+        $title = wp_sprintf(
             esc_html__('Search Results for: %s',  'markup'),
             '<span>' . get_search_query() . '</span>'
         );
     elseif (is_404()) :
-        esc_html_e('Page not found', 'markup');
+        $title = esc_html__('Page not found', 'markup');
     endif;
+
+    if ($echo) {
+        echo "<{$tag}>{$title}</{$tag}>";
+    } else {
+        return "<{$tag}>{$title}</{$tag}>";
+    }
 }
 
 /**

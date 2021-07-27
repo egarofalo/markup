@@ -32,3 +32,11 @@ add_filter('markup_show_static_sidebar', function () {
         // add conditionals here...
     ], true);
 });
+
+/**
+ * Filter the site title.
+ */
+add_filter('markup_site_title', function (string $title) {
+    // change the site title here...
+    return $title;
+});

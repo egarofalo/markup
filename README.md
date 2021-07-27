@@ -19,6 +19,39 @@ To start using Markup you must ensure that:
 
 Install [Composer](https://getcomposer.org/download/) on your computer and after installing run the command <code>composer require codevelopers/markup</code> in the root of your Wordpress project. Composer will automatically install Markup in the <code>wp-content/themes</code> folder.
 
+## Theme structure
+
+```sh
+themes/markup/              # → Markup root folder
+├── assets/                 # → Translation files
+│   ├── fonts/              # → Fonts files processed by Webpack
+│   ├── images/             # → Statics image files processed by Webpack
+│   ├── scripts/            # → Javascript files processed by Webpack
+│   ├── styles/             # → Scss files processed by Webpack
+│   ├── assets.json         # → Manifest file used by Webpack
+├── external/               # → External php libraries
+├── helpers/                # → Helpers functions used by template files
+├── hooks/                  # → Custom and WordPress Hooks
+├── languages/              # → Translation files
+├── template-parts/         # → Template parts
+├── 404.php                 # → Template file
+├── comments.php            # → Template file
+├── composer.json           # → Composer file
+├── footer.php              # → Template file
+├── functions.php           # → Theme bootloader
+├── header.php              # → Template file
+├── index.php               # → Template file
+├── package.json            # → Node.js dependencies and scripts
+├── page.php                # → Template file
+├── postcss.config.js       # → Used by Webpack
+├── searchform.php          # → Template file
+├── sidebar.php             # → Template file
+├── single.php              # → Template file
+├── style.css               # → Theme meta information
+├── template-full-width.php # → Template Full Width
+└── webpack.config.js       # → Webpack Encore configuration
+```
+
 ## The <code>functions.php</code> file
 
 This file takes care of including the external libraries, helpers, and hooks.
