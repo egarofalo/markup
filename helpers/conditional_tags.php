@@ -11,3 +11,10 @@ function has_dynamic_sidebar(string $name)
 {
     return is_active_sidebar($name) and !apply_filters('markup_hide_dynamic_sidebar', false, $name);
 }
+
+function show_paginator()
+{
+    global $wp_query;
+
+    return $wp_query->max_num_pages > 1;
+}

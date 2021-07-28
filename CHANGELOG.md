@@ -1,3 +1,21 @@
+## [1.0.5] - 2021-07-28
+
+### Added
+
+-   Add new theme metadata in `style.css` stylesheet theme
+-   Add `_image.scss` for image elements styles
+-   Add `show_paginator` conditional tag
+
+### Changed
+
+-   Change version in `style.css` stylesheet theme file
+-   Update **Theme structure** section in `README.md`
+-   Update `paginator.php` template part for show the paginator only when is needed
+
+### Removed
+
+-   Remove `_global.scss` file
+
 ## [1.0.4] - 2021-07-27
 
 ### Added

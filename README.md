@@ -22,34 +22,60 @@ Install [Composer](https://getcomposer.org/download/) on your computer and after
 ## Theme structure
 
 ```sh
-themes/markup/              # → Markup root folder
-├── assets/                 # → Translation files
-│   ├── fonts/              # → Fonts files processed by Webpack
-│   ├── images/             # → Statics image files processed by Webpack
-│   ├── scripts/            # → Javascript files processed by Webpack
-│   ├── styles/             # → Scss files processed by Webpack
-│   ├── assets.json         # → Manifest file used by Webpack
-├── external/               # → External php libraries
-├── helpers/                # → Helpers functions used by template files
-├── hooks/                  # → Custom and WordPress Hooks
-├── languages/              # → Translation files
-├── template-parts/         # → Template parts
-├── 404.php                 # → Template file
-├── comments.php            # → Template file
-├── composer.json           # → Composer file
-├── footer.php              # → Template file
-├── functions.php           # → Theme bootloader
-├── header.php              # → Template file
-├── index.php               # → Template file
-├── package.json            # → Node.js dependencies and scripts
-├── page.php                # → Template file
-├── postcss.config.js       # → Used by Webpack
-├── searchform.php          # → Template file
-├── sidebar.php             # → Template file
-├── single.php              # → Template file
-├── style.css               # → Theme meta information
-├── template-full-width.php # → Template Full Width
-└── webpack.config.js       # → Webpack Encore configuration
+themes/markup/                  # → Markup root folder
+├── assets/                     # → Translation files
+│   ├── fonts/                  # → Fonts files processed by Webpack
+│   ├── images/                 # → Statics image files processed by Webpack
+│   ├── scripts/                # → Javascript files processed by Webpack
+│   ├── styles/                 # → Scss files processed by Webpack
+│   │   ├── mixins/             # → Mixins used in scss files
+│   │   ├── _404.scss           # → 404 page styles
+│   │   ├── _alert.scss         # → Bootstrap alerts custom styles
+│   │   ├── _archive.scss       # → Archive pages styles
+│   │   ├── _button_.scss       # → Buttons styles
+│   │   ├── _container.scss     # → Containers styles
+│   │   ├── _fonts.scss         # → Html root element responsive font size
+│   │   ├── _footer.scss        # → Site footer styles
+│   │   ├── _form.scss          # → Forms styles
+│   │   ├── _image.scss         # → Image elements styles, like logos, brands and others
+│   │   ├── _link.scss          # → Links styles
+│   │   ├── _loop.scss          # → WordPress loop styles, like regular posts and custom posts
+│   │   ├── _modal.scss         # → Bootstrap modals custom styles
+│   │   ├── _nav.scss           # → Site navigation elements styles
+│   │   ├── _page.scss          # → WordPress pages styles
+│   │   ├── _paginator.scss     # → Pagination elements styles
+│   │   ├── _section.scss       # → Section elements styles
+│   │   ├── _sidebar.scss       # → Sidebars styles
+│   │   ├── _single.scss        # → Single template styles
+│   │   ├── _table.scss         # → Table elements styles
+│   │   ├── _title.scss         # → Heading elements styles
+│   │   ├── _variables.scss     # → Bootstrap variables override
+│   │   ├── _vendor.scss        # → External libraries styles
+│   │   ├── editor-styles.scss  # → Editor styles
+│   │   ├── login.scss          # → Admin login styles
+│   │   └── main.scss           # → This file includes all the _*.scss files
+│   └── assets.json             # → Manifest file used by Webpack
+├── external/                   # → External php libraries
+├── helpers/                    # → Helpers functions used by template files
+├── hooks/                      # → Custom and WordPress Hooks
+├── languages/                  # → Translation files
+├── template-parts/             # → Template parts
+├── 404.php                     # → Template file
+├── comments.php                # → Template file
+├── composer.json               # → Composer file
+├── footer.php                  # → Template file
+├── functions.php               # → Theme bootloader
+├── header.php                  # → Template file
+├── index.php                   # → Template file
+├── package.json                # → Node.js dependencies and scripts
+├── page.php                    # → Template file
+├── postcss.config.js           # → Used by Webpack
+├── searchform.php              # → Template file
+├── sidebar.php                 # → Template file
+├── single.php                  # → Template file
+├── style.css                   # → Theme meta information
+├── template-full-width.php     # → Template Full Width
+└── webpack.config.js           # → Webpack Encore configuration
 ```
 
 ## The <code>functions.php</code> file

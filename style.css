@@ -1,10 +1,15 @@
 /*
  * Theme Name: Markup
- * Version: 1.0.3
- * Description: Wordpress Starter Theme integrated with Bootstrap 4 Framework and Webpack Encore.
+ * Theme URI: https://github.com/egarofalo/markup
  * Author: codevelopers
  * Author URI: https://codevelopers.tech/
+ * Description: Wordpress Starter Theme integrated with Bootstrap 4 Framework and Webpack Encore.
+ * Requires at least: 5.3
+ * Tested up to: 5.8
+ * Requires PHP: 7.0
+ * Version: 1.0.5
+ * License: MIT License
+ * License URI: https://opensource.org/licenses/MIT
  * Text Domain: markup
  * Domain Path: /languages
- * License: MIT License
  */

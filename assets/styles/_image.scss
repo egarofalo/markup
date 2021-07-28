@@ -1,0 +1,7 @@
+img {
+	// Custom logo
+	&.custom-logo {
+		@extend .img-fluid;
+		width: 6rem;
+	}
+}
