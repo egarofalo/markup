@@ -1,5 +1,6 @@
 <?php
 
+use function Codevelopers\Markup\Helpers\TemplateTags\get_template_part;
 use function Codevelopers\Markup\Helpers\TemplateTags\site_main_row_container_class;
 use function Codevelopers\Markup\Helpers\TemplateTags\site_main_col_container_class;
 
@@ -12,7 +13,7 @@ get_header() ?>
                 <?php
                 while (have_posts()) :
                     the_post();
-                    get_template_part('template-parts/content', 'page');
+                    get_template_part('content', 'page');
                 endwhile;
 
                 // If comments are open or we have at least one comment, load the comment template.
@@ -23,7 +24,7 @@ get_header() ?>
             </main>
         </div>
 
-        <?php get_template_part('template-parts/sidebar', 'primary') ?>
+        <?php get_template_part('sidebar', 'primary') ?>
     </div>
 </div>
 

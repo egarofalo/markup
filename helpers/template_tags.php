@@ -5,6 +5,14 @@ namespace Codevelopers\Markup\Helpers\TemplateTags;
 use function CoDevelopers\Markup\Helpers\ConditionalTags\has_dynamic_sidebar;
 
 /**
+ * Loads a template part stored in the template-parts directory.
+ */
+function get_template_part(string $slug, string $name = null, array $args = [])
+{
+    \get_template_part('template-parts/' . ltrim($slug, '/'), $name, $args);
+}
+
+/**
  * Display the title.
  */
 function site_title(bool $echo = true, string $tag = 'h1')

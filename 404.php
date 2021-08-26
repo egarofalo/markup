@@ -1,6 +1,7 @@
 <?php
 
 use function Codevelopers\Markup\Helpers\Asset\asset;
+use function Codevelopers\Markup\Helpers\TemplateTags\get_template_part;
 use function Codevelopers\Markup\Helpers\TemplateTags\site_main_row_container_class;
 use function Codevelopers\Markup\Helpers\TemplateTags\site_main_col_container_class;
 
@@ -29,7 +30,7 @@ get_header() ?>
             </main>
         </div>
 
-        <?php get_template_part('template-parts/sidebar', 'primary') ?>
+        <?php get_template_part('sidebar', 'primary') ?>
     </div>
 </div>
 

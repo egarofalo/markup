@@ -101,6 +101,10 @@ Custom queries can be created inside the <code>query.php</code> helper file as f
 
 Template tags can be created inside the <code>template_tags.php</code> helper file, and you can call these functions in any template file.
 
+## Template parts
+
+A helper function called <code>get_template_part</code>, defined in the <code>template_tags.php</code> helper file with the same parameters as the WordPress <code>get_template_part</code> core function, is used to include the template parts located into the <code>template-parts</code> directory. Remember that <code>get_template_part</code> helper function automatically append the <code>template-parts</code> directory name to the first <code>$slug</code> parameter, so you only need to pass the name of the template part.
+
 ## Install front-end dependencies
 
 To install front-end dependencies, you must install Yarn, and then run the following command in the theme directory:

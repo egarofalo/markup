@@ -1,3 +1,14 @@
+## [1.1.0] - 2021-08-26
+
+### Added
+
+-   Add new helper function `get_template_part` into the helper file `template_tags.php`
+
+### Changed
+
+-   Update all template files and hooks files were `get_template_part` helper function was invoked
+-   Update `README.md` file
+
 ## [1.0.5] - 2021-07-28
 
 ### Added

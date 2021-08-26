@@ -80,7 +80,7 @@ add_action('template_redirect', function () {
     if (in_array(true, $templates)) {
         $wp_query->set_404();
         status_header(404);
-        get_template_part(404);
+        get_template_part('404');
         exit;
     }
 });
