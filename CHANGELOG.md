@@ -1,3 +1,18 @@
+## [1.1.1] - 2021-12-14
+
+### Changed
+
+-   Changed footer vendor styles
+-   Changed engine "node" version to `14.x` in `package.json` file
+
+### Fixed
+
+-   Fixed value attribute on the meta charset tag inside the `head.php` template part
+
+### Removed
+
+-   Remove unused styles in `_footer.scss` sass file
+
 ## [1.1.0] - 2021-08-26
 
 ### Added

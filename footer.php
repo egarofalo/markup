@@ -10,7 +10,7 @@
                     the_custom_logo();
                 else :
                 ?>
-                    <p class="font-weight-bold text-center"><?php bloginfo('name') ?></p>
+                    <p class="font-weight-bold text-center mb-0"><?php bloginfo('name') ?></p>
                 <?php endif; ?>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
     <div class="site-footer__vendor">
         <div class="container-fluid">
-            <a href="https://codevelopers.tech" target="_blank" rel="noopener noreferrer">codevelopers.tech</a>
+            <a href="https://codevelopers.tech" target="_blank" rel="noopener noreferrer">codevelopers</a>
         </div>
     </div>
 </footer><!-- .site-footer -->
