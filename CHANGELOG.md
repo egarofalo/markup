@@ -1,3 +1,9 @@
+## [1.1.2] - 2021-12-15
+
+### Changed
+
+-   Changed `README.md` file
+
 ## [1.1.1] - 2021-12-14
 
 ### Changed

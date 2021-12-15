@@ -12,7 +12,7 @@ To start using Markup you must ensure that:
 
 -   php >= 7.0
 -   Composer
--   Node.js >= 12.x
+-   Node.js >= 14.x
 -   Yarn
 
 ## Installation
@@ -90,8 +90,8 @@ You can find some hooks defined into the <code>php</code> scripts located in the
 
 ## Helpers
 
-Markup come with some helper functions wich help you resolve common code problems while you are develope a new theme. Helper files, wich contain helper functions, must have a unique namespace, to avoid coalitions of functions and constants with other files or libraries. Helper files are located in the <code>helpers</code> folder.
-As same as hooks, a new helper function can be written in one of the exisiting helper files. If you want, you can create a new file with a unique namespace for avoid coalitions. Helper functions can act as filters or actions, and you can use it inside hook files. Also, you can use a helper function as a template tag. Feel free to create helper functions that you can use in any part of your code.
+Markup come with some helper functions wich help you resolve common code problems while you are developing a new theme. Helper files, wich contain helper functions, must have a unique namespace, to avoid coalitions of functions and constants with other files or libraries. Helper files are located in the <code>helpers</code> folder.
+As same as hooks, a new helper function can be written in one of the exisiting helper files. If you want, you can create a new file with a unique namespace for avoid coalitions. Also you can use helper functions within hook files and as a template tag. Feel free to create helper functions that you can use in any part of your code.
 
 ## Custom Queries
 
@@ -103,7 +103,7 @@ Template tags can be created inside the <code>template_tags.php</code> helper fi
 
 ## Template parts
 
-A helper function called <code>get_template_part</code>, defined in the <code>template_tags.php</code> helper file with the same parameters as the WordPress <code>get_template_part</code> core function, is used to include the template parts located into the <code>template-parts</code> directory. Remember that <code>get_template_part</code> helper function automatically append the <code>template-parts</code> directory name to the first <code>$slug</code> parameter, so you only need to pass the name of the template part.
+A helper function called <code>get_template_part</code>, defined in the <code>template_tags.php</code> helper file, with the same parameters as the WordPress <code>get_template_part</code> core function, is used to include the templates parts located into the <code>template-parts</code> directory. Remember that <code>get_template_part</code> helper function automatically append the <code>template-parts</code> directory name to the first <code>$slug</code> parameter, so you only need to pass the name of the template part.
 
 ## Install front-end dependencies
 
