@@ -1,6 +1,24 @@
-# Project
+<p align="center">
+    <a href="https://github.com/egarofalo/markup.git">
+        <img alt="Markup" src="assets/images/markup-logo.png" height="105" width="450">
+    </a>
+</p>
 
-Wordpress starter theme integrated with Bootstrap 4 Framework and Webpack Encore.
+<p align="center">
+    <a href="LICENSE.md">
+        <img alt="License" src="https://img.shields.io/github/license/egarofalo/markup?color=f18700">
+    </a>
+    <a href="https://packagist.org/packages/codevelopers/markup">
+        <img alt="Packagist Version" src="https://img.shields.io/packagist/v/codevelopers/markup">
+    </a>
+    <a href="https://packagist.org/packages/codevelopers/markup">
+        <img alt="Packagist PHP Version Support" src="https://img.shields.io/packagist/php-v/codevelopers/markup">
+    </a>
+</p>
+
+<p align="center">
+    <strong>WordPress starter theme integrated with Bootstrap 4 Framework and Webpack Encore.</strong><br />SEO friendly :wink:
+</p>
 
 ## Description
 
