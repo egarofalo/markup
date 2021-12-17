@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-    <a href="LICENSE.md">
+    <a href="LICENSE.md" style="display: inline-block">
         <img alt="License" src="https://img.shields.io/github/license/egarofalo/markup?color=f18700">
     </a>
-    <a href="https://packagist.org/packages/codevelopers/markup">
+    <a href="https://packagist.org/packages/codevelopers/markup" style="display: inline-block">
         <img alt="Packagist Version" src="https://img.shields.io/packagist/v/codevelopers/markup">
     </a>
-    <a href="https://packagist.org/packages/codevelopers/markup">
+    <a href="https://packagist.org/packages/codevelopers/markup" style="display: inline-block">
         <img alt="Packagist PHP Version Support" src="https://img.shields.io/packagist/php-v/codevelopers/markup">
     </a>
 </p>
