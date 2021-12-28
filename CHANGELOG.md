@@ -1,3 +1,18 @@
+## [1.1.3] - 2021-12-28
+
+### Added
+
+-   Add `assets/markup-logo.png` Markup image logo
+-   Add `screenshot.jpg` theme image file
+
+### Changed
+
+-   Update `README.md`
+
+### Removed
+
+-   Remove **slide-desktop**, **slide-mobile**, **image-header** and **banner** thumbnails
+
 ## [1.1.2] - 2021-12-15
 
 ### Changed
