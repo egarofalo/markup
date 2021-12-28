@@ -17,10 +17,6 @@ add_action('after_setup_theme', function () {
 add_action('init', function () {
     add_theme_support('post-thumbnails');
     add_image_size('loop', 500, 350, true);
-    add_image_size('slide-desktop', 1920, 900, true);
-    add_image_size('slide-mobile', 800, 700, true);
-    add_image_size('image-header', 1920, 900, true);
-    add_image_size('banner', 1920, 1080, true);
 });
 
 /**
