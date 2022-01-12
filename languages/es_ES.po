@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Starter Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 19:38+0000\n"
-"PO-Revision-Date: 2021-07-25 14:01+0000\n"
+"PO-Revision-Date: 2022-01-12 03:50+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -39,7 +39,7 @@ msgstr "Los comentarios están cerrados."
 msgid "Full Width"
 msgstr "Ancho Completo"
 
-#: 404.php:24
+#: 404.php:25
 #, php-format
 msgid "Go to our <a href=\"%s\">HOME</a> page to continue browsing our site."
 msgstr ""
@@ -50,6 +50,10 @@ msgstr ""
 msgid "https://codevelopers.tech/"
 msgstr "https://codevelopers.tech/"
 
+#. URI of the theme
+msgid "https://github.com/egarofalo/markup"
+msgstr ""
+
 #. Name of the theme
 msgid "Markup"
 msgstr "Markup"
@@ -59,7 +63,7 @@ msgstr "Markup"
 msgid "One comment on &ldquo;%1$s&rdquo;"
 msgstr "Un comentario sobre &ldquo;%1$s&rdquo;"
 
-#: helpers/template_tags.php:24
+#: helpers/template_tags.php:34
 msgid "Page not found"
 msgstr "Página no encontrada"
 
@@ -68,19 +72,19 @@ msgstr "Página no encontrada"
 msgid "Posted on %s"
 msgstr "Publicado en %s"
 
-#: hooks/action.php:56
+#: hooks/action.php:60
 msgid "Primary"
 msgstr "Primaria"
 
-#: hooks/action.php:24
+#: hooks/action.php:25
 msgid "Primary navigation"
 msgstr "Navegación primaria"
 
-#: hooks/action.php:26
+#: hooks/action.php:27
 msgid "Primary navigation for mobile devices"
 msgstr "Navegación primaria para dispositivos móviles"
 
-#: template-parts/content-loop.php:29
+#: template-parts/content-loop.php:31
 msgid "Read more"
 msgstr "Leer más"
 
@@ -92,7 +96,7 @@ msgstr "Buscar"
 msgid "Search &hellip;"
 msgstr "Buscar &hellip;"
 
-#: helpers/template_tags.php:20
+#: helpers/template_tags.php:30
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Resultados de búsqueda para: %s"
@@ -105,13 +109,17 @@ msgstr "Buscar:"
 msgid "Sorry, no posts found."
 msgstr "Lo sentimos, no se encontraron publicaciones."
 
-#: 404.php:14
+#: 404.php:15
 msgid "Sorry, we couldn't find what you're looking for."
 msgstr "Lo sentimos, no pudimos encontrar lo que buscaba."
 
-#: comments.php:66
+#: hooks/filter.php:68
 msgid "The comment field must not be empty"
 msgstr "El campo de comentario no debe estar vacío"
+
+#: hooks/filter.php:22
+msgid "This field is required"
+msgstr "Este campo es requerido"
 
 #. Description of the theme
 msgid ""

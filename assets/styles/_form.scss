@@ -1,29 +1,47 @@
 form {
-    // Site search form
-    &.search-form {
-        max-width: 25rem;
+	// Site search form
+	&.search-form {
+		max-width: 25rem;
 
-        [type="submit"].button {
-            &:after {
-                @include fa;
-                @include fas;
-                content: "\f002";
-            }
+		[type="submit"].button {
+			&:after {
+				@include fa;
+				@include fas;
+				content: "\f002";
+			}
 
-            &.loading {
-                &:after {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
+			&.loading {
+				&:after {
+					margin-left: 0;
+				}
+			}
+		}
+	}
 
-    // Comment form
-    &.comment-form {
-        .comment-form-comment {
-            textarea#comment {
-                max-width: 600px;
-            }
-        }
-    }
+	// Comment form
+	&.comment-form {
+		.comment-form-comment {
+			textarea#comment {
+				max-width: $maxw-comment-form-fields;
+			}
+		}
+
+		.comment-form-author {
+			input#author {
+				max-width: $maxw-comment-form-fields;
+			}
+		}
+
+		.comment-form-email {
+			input#email {
+				max-width: $maxw-comment-form-fields;
+			}
+		}
+
+		.comment-form-url {
+			input#url {
+				max-width: $maxw-comment-form-fields;
+			}
+		}
+	}
 }

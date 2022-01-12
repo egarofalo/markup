@@ -4,83 +4,75 @@ const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 module.exports = (env) => {
-    // will output scripts
-    manifest.entries.forEach((element) => {
-        Encore.addEntry(element.output, element.input);
-    });
+	// will output scripts
+	manifest.entries.forEach((element) => {
+		Encore.addEntry(element.output, element.input);
+	});
 
-    // will output styles
-    manifest.styleEntries.forEach((element) => {
-        Encore.addStyleEntry(element.output, element.input);
-    });
+	// will output styles
+	manifest.styleEntries.forEach((element) => {
+		Encore.addStyleEntry(element.output, element.input);
+	});
 
-    Encore
+	Encore
 
-        // the project directory where compiled assets will be stored
-        .setOutputPath(manifest.outputPath)
+		// the project directory where compiled assets will be stored
+		.setOutputPath(manifest.outputPath)
 
-        // the public path used by the web server to access the previous directory
-        .setPublicPath(manifest.publicPath)
-        .setManifestKeyPrefix("")
+		// the public path used by the web server to access the previous directory
+		.setPublicPath(manifest.publicPath)
+		.setManifestKeyPrefix("")
 
-        // empty the outputPath dir before each build
-        .cleanupOutputBeforeBuild()
+		// empty the outputPath dir before each build
+		.cleanupOutputBeforeBuild()
 
-        // show OS notifications when builds finish/fail
-        .enableBuildNotifications()
+		// show OS notifications when builds finish/fail
+		.enableBuildNotifications()
 
-        // allow legacy applications to use $/jQuery as a global variable this allow to prevent require jquery in our scripts
-        //.autoProvidejQuery()
+		// allow legacy applications to use $/jQuery as a global variable this allow to prevent require jquery in our scripts
+		//.autoProvidejQuery()
 
-        // tell Webpack to output a separate runtime.js file
-        // this file must be included via a script tag before all other JavaScript files output by Encore.
-        .enableSingleRuntimeChunk()
+		// Fix image keys in manifest.json file when versioning is enable
+		.configureUrlLoader({
+			images: {
+				limit: 0,
+				esModule: false,
+			},
+		})
 
-        // this creates a 'shared.js' entry file with jQuery, Bootstrap and other shared modules
-        .createSharedEntry(
-            manifest.sharedEntry.output,
-            manifest.sharedEntry.input
-        )
+		// tell Webpack to output a separate runtime.js file
+		// this file must be included via a script tag before all other JavaScript files output by Encore.
+		.enableSingleRuntimeChunk()
 
-        // minify images
-        .addPlugin(
-            new ImageminPlugin({
-                disable: !Encore.isProduction(),
-            })
-        )
+		// this creates a 'shared.js' entry file with jQuery, Bootstrap and other shared modules
+		.createSharedEntry(
+			manifest.sharedEntry.output,
+			manifest.sharedEntry.input
+		)
 
-        // source maps
-        .enableSourceMaps(!Encore.isProduction())
+		// minify images
+		.addPlugin(
+			new ImageminPlugin({
+				disable: !Encore.isProduction(),
+			})
+		)
 
-        // uncomment if you use Sass/SCSS files
-        .enableSassLoader()
+		// source maps
+		.enableSourceMaps(!Encore.isProduction())
 
-        // uncomment to create hashed filenames (e.g. app.abc123.css)
-        .enableVersioning(Encore.isProduction())
+		// uncomment if you use Sass/SCSS files
+		.enableSassLoader()
 
-        // enable autoprefixer
-        .enablePostCssLoader();
+		// uncomment to create hashed filenames (e.g. app.abc123.css)
+		.enableVersioning(Encore.isProduction())
 
-    /*
-        // Change the fonts options loader
-        .configureLoaderRule("fonts", (loaderRule) => {
-            loaderRule.options = Object.assign(loaderRule.options, {
-                publicPath: manifest.fullPublicPath,
-            });
-        })
+		// enable autoprefixer
+		.enablePostCssLoader();
 
-        // Change the images options loader
-        .configureLoaderRule("images", (loaderRule) => {
-            loaderRule.options = Object.assign(loaderRule.options, {
-                publicPath: manifest.fullPublicPath,
-            });
-        });
-        */
+	if (process.argv.indexOf("--browsersync") > -1) {
+		// add BrowserSync plugin
+		Encore.addPlugin(new BrowserSyncPlugin(manifest.browserSync));
+	}
 
-    if (process.argv.indexOf("--browsersync") > -1) {
-        // add BrowserSync plugin
-        Encore.addPlugin(new BrowserSyncPlugin(manifest.browserSync));
-    }
-
-    return Encore.getWebpackConfig();
+	return Encore.getWebpackConfig();
 };

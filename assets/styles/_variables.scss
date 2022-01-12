@@ -3,12 +3,12 @@
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 $grid-breakpoints: (
-    xxs: 0,
-    xs: 420px,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1300px,
+	xxs: 0,
+	xs: 420px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1300px,
 );
 
 // Grid containers
@@ -16,11 +16,11 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-    xs: 420px,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1300px,
+	xs: 420px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1300px,
 );
 
 // Global colors
@@ -105,5 +105,8 @@ $dropdown-link-hover-bg: $secondary-color;
 $dropdown-link-active-color: $white;
 $dropdown-link-active-bg: $secondary-color;
 
-// web vars
+// Markup Vars
+// Post loop max width
 $post-loop-max-width: 480px;
+// Comment form fields max width
+$maxw-comment-form-fields: 600px;

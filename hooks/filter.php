@@ -16,6 +16,64 @@ add_filter('style_loader_tag', function ($html, $handler) {
 }, 10, 2);
 
 /**
+ * Add Bootstrap classes to comments form fields.
+ */
+add_filter('comment_form_default_fields', function ($fields) {
+    $required_feedback = '<span class="invalid-feedback">' . __("This field is required", 'markup') . '</span></p>';
+
+    if (!empty($fields['author'])) {
+        $fields['author'] = str_replace(
+            ['<input ', '</p>'],
+            [
+                '<input class="form-control" ',
+                $required_feedback
+            ],
+            $fields['author']
+        );
+    }
+
+    if (!empty($fields['email'])) {
+        $fields['email'] = str_replace(
+            ['<input ', '</p>'],
+            [
+                '<input class="form-control" ',
+                $required_feedback
+            ],
+            $fields['email']
+        );
+    }
+
+    if (!empty($fields['url'])) {
+        $fields['url'] = str_replace(
+            ['<input ', '</p>'],
+            [
+                '<input class="form-control" ',
+                $required_feedback
+            ],
+            $fields['url']
+        );
+    }
+
+    return $fields;
+});
+
+/**
+ * Add span.invalid-feedback element and .from-control class to textarea comment field.
+ */
+add_filter('comment_form_defaults', function ($defaults) {
+    $defaults['comment_field'] = str_replace(
+        ['<textarea ', '</p>'],
+        [
+            '<textarea class="form-control" ',
+            '<span class="invalid-feedback">' . __("The comment field must not be empty", 'markup') . '</span>'
+        ],
+        $defaults['comment_field']
+    );
+
+    return $defaults;
+});
+
+/**
  * Hide dynamic sidebar in certain pages.
  */
 add_filter('markup_hide_dynamic_sidebar', function ($name) {

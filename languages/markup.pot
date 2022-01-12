@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Markup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-25 14:01+0000\n"
+"POT-Creation-Date: 2022-01-12 03:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -40,13 +40,17 @@ msgstr ""
 msgid "Full Width"
 msgstr ""
 
-#: 404.php:24
+#: 404.php:25
 #, php-format
 msgid "Go to our <a href=\"%s\">HOME</a> page to continue browsing our site."
 msgstr ""
 
 #. Author URI of the theme
 msgid "https://codevelopers.tech/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://github.com/egarofalo/markup"
 msgstr ""
 
 #. Name of the theme
@@ -58,7 +62,7 @@ msgstr ""
 msgid "One comment on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#: helpers/template_tags.php:24
+#: helpers/template_tags.php:34
 msgid "Page not found"
 msgstr ""
 
@@ -67,19 +71,19 @@ msgstr ""
 msgid "Posted on %s"
 msgstr ""
 
-#: hooks/action.php:56
+#: hooks/action.php:60
 msgid "Primary"
 msgstr ""
 
-#: hooks/action.php:24
+#: hooks/action.php:25
 msgid "Primary navigation"
 msgstr ""
 
-#: hooks/action.php:26
+#: hooks/action.php:27
 msgid "Primary navigation for mobile devices"
 msgstr ""
 
-#: template-parts/content-loop.php:29
+#: template-parts/content-loop.php:31
 msgid "Read more"
 msgstr ""
 
@@ -91,7 +95,7 @@ msgstr ""
 msgid "Search &hellip;"
 msgstr ""
 
-#: helpers/template_tags.php:20
+#: helpers/template_tags.php:30
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
@@ -104,12 +108,16 @@ msgstr ""
 msgid "Sorry, no posts found."
 msgstr ""
 
-#: 404.php:14
+#: 404.php:15
 msgid "Sorry, we couldn't find what you're looking for."
 msgstr ""
 
-#: comments.php:66
+#: hooks/filter.php:68
 msgid "The comment field must not be empty"
+msgstr ""
+
+#: hooks/filter.php:22
+msgid "This field is required"
 msgstr ""
 
 #. Description of the theme

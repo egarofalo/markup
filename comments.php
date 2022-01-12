@@ -55,16 +55,7 @@ if (post_password_required()) {
 
     comment_form([
         'class_form' => 'comment-form needs-validation with-loading-state',
-        'class_submit' => 'btn btn-outline-dark',
-        'comment_field' => sprintf(
-            '<p class="comment-form-comment">%s %s %s</p>',
-            sprintf(
-                '<label for="comment">%s</label>',
-                _x('Comment', 'markup')
-            ),
-            '<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" class="form-control"></textarea>',
-            '<span class="invalid-feedback">' . __("The comment field must not be empty", 'markup') . '</span>'
-        ),
+        'class_submit' => 'btn btn-outline-dark'
     ]);
     ?>
 </div>
