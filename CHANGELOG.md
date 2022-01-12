@@ -1,3 +1,22 @@
+## [1.2.0] - 2022-01-12
+
+### Added
+
+-   Add traductions
+-   Add `comment_form_default_fields` filter hook for change comment form fields markup
+-   Add `comment_form_default` filter hook for change comments field markup
+
+### Changed
+
+-   Move `main.js` and `forms.js` scripts to footer
+-   Update _Webpack Encore_ version to `^0.33.0`
+-   Update `sass-loader` version to `^10.2.0`
+-   Update `postcss-loader` version to `^4.3.0`
+
+### Fixed
+
+-   Fix image files hashed path in `manifest.json`
+
 ## [1.1.3] - 2021-12-28
 
 ### Added
